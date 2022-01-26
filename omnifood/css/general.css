@@ -1,0 +1,204 @@
+/*
+  STYLE SYSTEM
+
+---01: TYPOGRAPHY
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+-FONT FAMILY:
+Rubik
+
+-LINE HEIGHT:
+Default: 1 
+Heading: 1.05
+Paragraph: 1.7
+
+-FONT WEIGHT
+Default: 400
+Small: 500
+Semi-bold: 600
+Bold: 700
+
+---02: COLORS
+-PRIMARY: #e67e22 
+--TINTS: #fdf2e9 #fae5d3 #eb984e
+--SHADES: #cf711f
+
+-GREYS: 
+---Default: #444444 
+--TINTS: #dadada #6F6F6F
+--SHADES: #191919
+
+---03: BORDER-RADIUS
+
+Default: 8px
+
+---04: WHITESPACE
+
+-SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+---05:SHADOWS
+
+
+*/
+
+/************************/
+/* GENERAL REUSABLE RULES */
+/************************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  color: #444444;
+  line-height: 1;
+  font-weight: 400;
+}
+
+strong {
+  font-weight: 600;
+}
+
+.heading-primary,
+.heading-secondary {
+  line-height: 1.05;
+  letter-spacing: -0.5px;
+}
+
+.heading-primary {
+  font-size: 4.4rem;
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -0.5px;
+  margin-bottom: 1.6rem;
+}
+.heading-secondary {
+  font-size: 3.6rem;
+  padding-bottom: 9.6rem;
+}
+
+.heading-tertiary {
+  font-size: 2.8rem;
+  margin-bottom: 3.2rem;
+}
+
+.subheading {
+  display: inline-block;
+  font-size: 1.8rem;
+  color: #cf711f;
+  letter-spacing: 1.5px;
+  margin: 8rem 0 1.2rem 0;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.margin-right-sm {
+  margin-right: 1.6rem !important;
+}
+
+.button,
+.button:link,
+.button:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.6rem;
+  padding: 1.6rem 3.2rem;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 300ms;
+}
+
+.button-outline:link,
+.button-outline:visited {
+  color: #444444;
+  background-color: #fff;
+}
+
+.button-outline:hover,
+.button-cta:active {
+  /* border: 2px solid rgba(255, 255, 255, 0); */
+  background-color: #fdf2e9;
+  color: #191919;
+}
+
+.button-cta:link,
+.button-cta:visited {
+  background-color: #e67e22;
+  font-weight: 600;
+}
+
+.button-cta:hover,
+.button-cta:active {
+  background-color: #cf711f;
+}
+
+.link:link,
+.link:visited {
+  text-decoration: none;
+  color: #e67e22;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 2px;
+  transition: all 300ms;
+}
+
+.link:hover,
+.link:active {
+  color: #cf711f;
+  border-bottom: 1px solid transparent;
+}
+
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 1rem hsla(28, 80%, 52%, 0.459);
+}
+/**************************/
+/* HELPER CLASSES */
+/**************************/
+
+.container {
+  margin: 0 auto;
+  max-width: 100rem;
+}
+
+.align-text {
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  row-gap: 9.6rem;
+}
+
+.grid-2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-5-cols {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.grid-col-gap-sm {
+  column-gap: 8rem;
+}
+
+/* .button-border {
+  border: 2px solid rgba(255, 255, 255, 0.938);
+} */
