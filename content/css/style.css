@@ -6,6 +6,12 @@
   height: 2.4rem;
 }
 
+.logo-link {
+  display: inline-block;
+  align-self: center;
+  justify-self: center;
+}
+
 .main-navigation {
   display: flex;
   justify-content: space-between;
@@ -15,7 +21,16 @@
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 2.4rem;
+  gap: 3.2rem;
+}
+
+.menu-icon {
+  display: none;
+}
+
+.menu-icon {
+  height: 4.8rem;
+  width: 4.8rem;
 }
 
 .main-nav-link:link,
@@ -196,6 +211,10 @@
   padding: 1.6rem 3.2rem 3.2rem 3.2rem;
 }
 
+.meals-heading {
+  font-size: 3rem;
+}
+
 .meal {
   border-radius: 9px;
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.144);
@@ -363,7 +382,9 @@
 /************************/
 
 .pricing-section {
-  padding: 4.8rem 0;
+  /* padding: 4.8rem 0; */
+  padding-top: 4.8rem;
+  padding-bottom: 4.8rem;
 }
 
 .pricing-plan {
@@ -431,13 +452,13 @@
   position: absolute;
 
   background-color: #f59e0b;
-  padding: 0.8rem 6.4rem;
   color: #fff;
+  padding: 0.8rem 6.4rem;
   top: 6%;
   right: -20%;
+  font-size: 1.4rem;
   text-transform: uppercase;
   transform: rotate(45deg);
-  font-size: 1.4rem;
   font-weight: 600;
 }
 

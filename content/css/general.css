@@ -168,6 +168,7 @@ strong {
 .container {
   margin: 0 auto;
   max-width: 100rem;
+  padding: 3.2rem;
 }
 
 .align-text {
